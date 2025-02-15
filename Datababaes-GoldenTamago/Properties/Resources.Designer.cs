@@ -83,6 +83,36 @@ namespace Datababaes_GoldenTamago.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chart1 {
+            get {
+                object obj = ResourceManager.GetObject("chart1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gett {
+            get {
+                object obj = ResourceManager.GetObject("gett", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap graph1 {
+            get {
+                object obj = ResourceManager.GetObject("graph1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gray {
             get {
                 object obj = ResourceManager.GetObject("gray", resourceCulture);
@@ -96,6 +126,46 @@ namespace Datababaes_GoldenTamago.Properties {
         internal static System.Drawing.Bitmap if_Close_132419 {
             get {
                 object obj = ResourceManager.GetObject("if_Close_132419", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_go_home_15297 {
+            get {
+                object obj = ResourceManager.GetObject("if_go-home_15297", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Inventory_box_shipment_product {
+            get {
+                object obj = ResourceManager.GetObject("Inventory_box_shipment_product", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logout1 {
+            get {
+                object obj = ResourceManager.GetObject("logout1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maintainance3 {
+            get {
+                object obj = ResourceManager.GetObject("maintainance3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

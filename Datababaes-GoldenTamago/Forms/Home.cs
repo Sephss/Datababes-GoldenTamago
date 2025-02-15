@@ -31,6 +31,29 @@ namespace Datababaes_GoldenTamago.Forms
             inventoryNav.MouseEnter += lbl_MouseEnter;
             inventoryNav.MouseLeave += lbl_MouseLeave;
             inventoryNav.Click += lblNav_Click;
+
+            salesTransaction.MouseEnter += lbl_MouseEnter;
+            salesTransaction.MouseLeave += lbl_MouseLeave;
+            salesTransaction.Click += lblNav_Click;
+
+            report.MouseEnter += lbl_MouseEnter;
+            report.MouseLeave += lbl_MouseLeave;
+            report.Click += lblNav_Click;
+
+            salesForecast.MouseEnter += lbl_MouseEnter;
+            salesForecast.MouseLeave += lbl_MouseLeave;
+            salesForecast.Click += lblNav_Click;
+
+            adminPanel.MouseEnter += lbl_MouseEnter;
+            adminPanel.MouseLeave += lbl_MouseLeave;
+            adminPanel.Click += lblNav_Click;
+
+            logOut.MouseEnter += lbl_MouseEnter;
+            logOut.MouseLeave += lbl_MouseLeave;
+            logOut.Click += lblNav_Click;
+
+           
+            
         }
         // When mouse enters (hover), change background to red
         private void lbl_MouseEnter(object sender, EventArgs e)
@@ -54,7 +77,7 @@ namespace Datababaes_GoldenTamago.Forms
                 lbl.BackColor = Color.Transparent;
                 activeLabel.BackColor = Color.Red;
             }
-            
+
         }
 
         private void lblNav_Click(object sender, EventArgs e)
@@ -107,6 +130,31 @@ namespace Datababaes_GoldenTamago.Forms
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void salesTransaction_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void report_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void salesForecast_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

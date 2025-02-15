@@ -30,6 +30,18 @@
         {
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
+            pictureBox9 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            logOut = new Label();
+            adminPanel = new Label();
+            salesForecast = new Label();
+            report = new Label();
+            salesTransaction = new Label();
             inventoryNav = new Label();
             label1 = new Label();
             panel2 = new Panel();
@@ -38,6 +50,13 @@
             pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -55,7 +74,20 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.Transparent;
             panel1.BackgroundImage = Properties.Resources.gray;
+            panel1.Controls.Add(pictureBox9);
+            panel1.Controls.Add(pictureBox8);
+            panel1.Controls.Add(pictureBox7);
+            panel1.Controls.Add(pictureBox6);
+            panel1.Controls.Add(pictureBox5);
+            panel1.Controls.Add(pictureBox4);
+            panel1.Controls.Add(pictureBox3);
+            panel1.Controls.Add(logOut);
+            panel1.Controls.Add(adminPanel);
+            panel1.Controls.Add(salesForecast);
+            panel1.Controls.Add(report);
+            panel1.Controls.Add(salesTransaction);
             panel1.Controls.Add(inventoryNav);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox1);
@@ -64,6 +96,143 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(178, 748);
             panel1.TabIndex = 1;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BackColor = Color.Transparent;
+            pictureBox9.BackgroundImage = Properties.Resources.logout1;
+            pictureBox9.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox9.Location = new Point(3, 668);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(37, 29);
+            pictureBox9.TabIndex = 15;
+            pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BackColor = Color.Transparent;
+            pictureBox8.BackgroundImage = Properties.Resources.maintainance3;
+            pictureBox8.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox8.Location = new Point(3, 593);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(37, 29);
+            pictureBox8.TabIndex = 14;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.Transparent;
+            pictureBox7.BackgroundImage = Properties.Resources.graph1;
+            pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox7.Location = new Point(3, 519);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(37, 29);
+            pictureBox7.TabIndex = 13;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = Color.Transparent;
+            pictureBox6.BackgroundImage = Properties.Resources.gett;
+            pictureBox6.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox6.Location = new Point(3, 441);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(37, 29);
+            pictureBox6.TabIndex = 12;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.Transparent;
+            pictureBox5.BackgroundImage = Properties.Resources.chart1;
+            pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox5.Location = new Point(3, 360);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(37, 29);
+            pictureBox5.TabIndex = 11;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.Transparent;
+            pictureBox4.BackgroundImage = Properties.Resources.Inventory_box_shipment_product;
+            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox4.Location = new Point(3, 275);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(37, 29);
+            pictureBox4.TabIndex = 10;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox3.Image = Properties.Resources.if_go_home_15297;
+            pictureBox3.Location = new Point(3, 198);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(37, 29);
+            pictureBox3.TabIndex = 9;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
+            // 
+            // logOut
+            // 
+            logOut.BackColor = Color.Transparent;
+            logOut.ForeColor = Color.White;
+            logOut.Location = new Point(0, 649);
+            logOut.Name = "logOut";
+            logOut.Size = new Size(178, 63);
+            logOut.TabIndex = 8;
+            logOut.Text = "Log out";
+            logOut.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // adminPanel
+            // 
+            adminPanel.BackColor = Color.Transparent;
+            adminPanel.ForeColor = Color.White;
+            adminPanel.Location = new Point(0, 575);
+            adminPanel.Name = "adminPanel";
+            adminPanel.Size = new Size(178, 63);
+            adminPanel.TabIndex = 7;
+            adminPanel.Text = "Admin Panel";
+            adminPanel.TextAlign = ContentAlignment.MiddleCenter;
+            adminPanel.Click += label5_Click;
+            // 
+            // salesForecast
+            // 
+            salesForecast.BackColor = Color.Transparent;
+            salesForecast.ForeColor = Color.White;
+            salesForecast.Location = new Point(0, 499);
+            salesForecast.Name = "salesForecast";
+            salesForecast.Size = new Size(178, 63);
+            salesForecast.TabIndex = 6;
+            salesForecast.Text = "Sales Forecast";
+            salesForecast.TextAlign = ContentAlignment.MiddleCenter;
+            salesForecast.Click += salesForecast_Click;
+            // 
+            // report
+            // 
+            report.BackColor = Color.Transparent;
+            report.ForeColor = Color.White;
+            report.Location = new Point(0, 424);
+            report.Name = "report";
+            report.Size = new Size(178, 63);
+            report.TabIndex = 5;
+            report.Text = "Report";
+            report.TextAlign = ContentAlignment.MiddleCenter;
+            report.Click += report_Click;
+            // 
+            // salesTransaction
+            // 
+            salesTransaction.BackColor = Color.Transparent;
+            salesTransaction.ForeColor = Color.White;
+            salesTransaction.Location = new Point(0, 343);
+            salesTransaction.Name = "salesTransaction";
+            salesTransaction.Size = new Size(178, 63);
+            salesTransaction.TabIndex = 4;
+            salesTransaction.Text = "Sales\r\nTransaction";
+            salesTransaction.TextAlign = ContentAlignment.MiddleCenter;
+            salesTransaction.Click += salesTransaction_Click;
             // 
             // inventoryNav
             // 
@@ -151,6 +320,13 @@
             Load += Home_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
@@ -166,5 +342,17 @@
         private Label label2;
         private Label label3;
         private Label inventoryNav;
+        private Label report;
+        private Label salesTransaction;
+        private Label logOut;
+        private Label adminPanel;
+        private Label salesForecast;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox8;
     }
 }
