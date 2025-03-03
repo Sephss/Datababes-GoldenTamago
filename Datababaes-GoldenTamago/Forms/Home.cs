@@ -52,8 +52,19 @@ namespace Datababaes_GoldenTamago.Forms
             logOut.MouseLeave += lbl_MouseLeave;
             logOut.Click += lblNav_Click;
 
-           
-            
+            ShowPanel(homePanel, panel2);
+
+            // Custom style for datetime in inventory
+            textBox1.Text = DateTime.Now.ToString("MM/dd/yyyy  hh:mm:ss tt");
+            textBox2.Text = DateTime.Now.ToString("MM/dd/yyyy  hh:mm:ss tt");
+            textBox3.Text = DateTime.Now.ToString("MM/dd/yyyy  hh:mm:ss tt");
+
+            // Sales Transaction Buttons 
+            payCashBtn.Enabled = false;
+            creditBtn.Enabled = false;
+
+
+
         }
         // When mouse enters (hover), change background to red
         private void lbl_MouseEnter(object sender, EventArgs e)
@@ -95,11 +106,28 @@ namespace Datababaes_GoldenTamago.Forms
             activeLabel = clickedLabel; // Update active label
         }
 
+        private void ShowPanel(Panel panel, Panel headerTitle)
+        {
+            // By Default all panels are visible
+            panel3.Visible = false;
+            homePanel.Visible = false;
+            salesTransactionPanel.Visible = false;
+
+            // The titles of each label when switched
+            panel3HeaderTitle.Visible = false;
+            salesTransactionHeaderTitle.Visible = false;
+
+
+            // this part will show the panel that is clicked
+            panel.Visible = true;
+            headerTitle.Visible = true;
+        }
+
 
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            ShowPanel(homePanel, panel2);
         }
 
         private void Home_Load(object sender, EventArgs e)
@@ -124,7 +152,7 @@ namespace Datababaes_GoldenTamago.Forms
 
         private void inventoryNav_Click(object sender, EventArgs e)
         {
-
+            ShowPanel(panel3, panel3HeaderTitle);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -134,7 +162,7 @@ namespace Datababaes_GoldenTamago.Forms
 
         private void salesTransaction_Click(object sender, EventArgs e)
         {
-
+            ShowPanel(salesTransactionPanel, salesTransactionHeaderTitle);
         }
 
         private void report_Click(object sender, EventArgs e)
@@ -154,7 +182,113 @@ namespace Datababaes_GoldenTamago.Forms
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void homePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void salesTransactionPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3HeaderTitle_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void textBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void payCashBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
