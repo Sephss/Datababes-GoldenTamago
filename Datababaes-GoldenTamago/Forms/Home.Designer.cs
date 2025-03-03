@@ -75,6 +75,8 @@
             label11 = new Label();
             label8 = new Label();
             salesTransactionPanel = new Panel();
+            creditBtn = new Button();
+            payCashBtn = new Button();
             textBox5 = new TextBox();
             textBox4 = new TextBox();
             label27 = new Label();
@@ -99,8 +101,19 @@
             label14 = new Label();
             dataGridView3 = new DataGridView();
             dataGridView2 = new DataGridView();
-            payCashBtn = new Button();
-            creditBtn = new Button();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            Column6 = new DataGridViewTextBoxColumn();
+            Column7 = new DataGridViewTextBoxColumn();
+            Column8 = new DataGridViewTextBoxColumn();
+            Column9 = new DataGridViewTextBoxColumn();
+            Column10 = new DataGridViewTextBoxColumn();
+            Column11 = new DataGridViewTextBoxColumn();
+            Column12 = new DataGridViewTextBoxColumn();
+            Column13 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -694,6 +707,27 @@
             salesTransactionPanel.TabIndex = 11;
             salesTransactionPanel.Paint += salesTransactionPanel_Paint;
             // 
+            // creditBtn
+            // 
+            creditBtn.BackColor = SystemColors.ScrollBar;
+            creditBtn.Location = new Point(1096, 473);
+            creditBtn.Name = "creditBtn";
+            creditBtn.Size = new Size(82, 48);
+            creditBtn.TabIndex = 30;
+            creditBtn.Text = "Credit";
+            creditBtn.UseVisualStyleBackColor = false;
+            // 
+            // payCashBtn
+            // 
+            payCashBtn.BackColor = SystemColors.ScrollBar;
+            payCashBtn.Location = new Point(1011, 473);
+            payCashBtn.Name = "payCashBtn";
+            payCashBtn.Size = new Size(82, 48);
+            payCashBtn.TabIndex = 29;
+            payCashBtn.Text = "Pay Cash";
+            payCashBtn.UseVisualStyleBackColor = false;
+            payCashBtn.Click += payCashBtn_Click;
+            // 
             // textBox5
             // 
             textBox5.BorderStyle = BorderStyle.FixedSingle;
@@ -917,6 +951,7 @@
             // dataGridView3
             // 
             dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView3.Columns.AddRange(new DataGridViewColumn[] { Column7, Column8, Column9, Column10, Column11, Column12, Column13 });
             dataGridView3.Location = new Point(624, 72);
             dataGridView3.Name = "dataGridView3";
             dataGridView3.RowHeadersWidth = 51;
@@ -926,32 +961,103 @@
             // dataGridView2
             // 
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
             dataGridView2.Location = new Point(17, 44);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 51;
             dataGridView2.Size = new Size(601, 362);
             dataGridView2.TabIndex = 0;
             // 
-            // payCashBtn
+            // Column1
             // 
-            payCashBtn.BackColor = SystemColors.ScrollBar;
-            payCashBtn.Location = new Point(1011, 473);
-            payCashBtn.Name = "payCashBtn";
-            payCashBtn.Size = new Size(82, 48);
-            payCashBtn.TabIndex = 29;
-            payCashBtn.Text = "Pay Cash";
-            payCashBtn.UseVisualStyleBackColor = false;
-            payCashBtn.Click += payCashBtn_Click;
+            Column1.HeaderText = "Product Size";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.Width = 125;
             // 
-            // creditBtn
+            // Column2
             // 
-            creditBtn.BackColor = SystemColors.ScrollBar;
-            creditBtn.Location = new Point(1096, 473);
-            creditBtn.Name = "creditBtn";
-            creditBtn.Size = new Size(82, 48);
-            creditBtn.TabIndex = 30;
-            creditBtn.Text = "Credit";
-            creditBtn.UseVisualStyleBackColor = false;
+            Column2.HeaderText = "Piece Price";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Tray Price";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Case Price";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "Product Description";
+            Column5.MinimumWidth = 6;
+            Column5.Name = "Column5";
+            Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            Column6.HeaderText = "Total Number of Eggs";
+            Column6.MinimumWidth = 6;
+            Column6.Name = "Column6";
+            Column6.Width = 125;
+            // 
+            // Column7
+            // 
+            Column7.HeaderText = "Product Size";
+            Column7.MinimumWidth = 6;
+            Column7.Name = "Column7";
+            Column7.Width = 125;
+            // 
+            // Column8
+            // 
+            Column8.HeaderText = "Order By";
+            Column8.MinimumWidth = 6;
+            Column8.Name = "Column8";
+            Column8.Width = 125;
+            // 
+            // Column9
+            // 
+            Column9.HeaderText = "Product";
+            Column9.MinimumWidth = 6;
+            Column9.Name = "Column9";
+            Column9.Width = 125;
+            // 
+            // Column10
+            // 
+            Column10.HeaderText = "Total in Eggs";
+            Column10.MinimumWidth = 6;
+            Column10.Name = "Column10";
+            Column10.Width = 125;
+            // 
+            // Column11
+            // 
+            Column11.HeaderText = "Qty";
+            Column11.MinimumWidth = 6;
+            Column11.Name = "Column11";
+            Column11.Width = 125;
+            // 
+            // Column12
+            // 
+            Column12.HeaderText = "Amount";
+            Column12.MinimumWidth = 6;
+            Column12.Name = "Column12";
+            Column12.Width = 125;
+            // 
+            // Column13
+            // 
+            Column13.HeaderText = "Sold To";
+            Column13.MinimumWidth = 6;
+            Column13.Name = "Column13";
+            Column13.Width = 125;
             // 
             // Home
             // 
@@ -1075,5 +1181,18 @@
         private Label label22;
         private Button creditBtn;
         private Button payCashBtn;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column6;
+        private DataGridViewTextBoxColumn Column7;
+        private DataGridViewTextBoxColumn Column8;
+        private DataGridViewTextBoxColumn Column9;
+        private DataGridViewTextBoxColumn Column10;
+        private DataGridViewTextBoxColumn Column11;
+        private DataGridViewTextBoxColumn Column12;
+        private DataGridViewTextBoxColumn Column13;
     }
 }
