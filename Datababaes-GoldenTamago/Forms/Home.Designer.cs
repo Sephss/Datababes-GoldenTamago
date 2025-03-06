@@ -100,13 +100,6 @@
             label13 = new Label();
             label14 = new Label();
             dataGridView3 = new DataGridView();
-            dataGridView2 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
             Column7 = new DataGridViewTextBoxColumn();
             Column8 = new DataGridViewTextBoxColumn();
             Column9 = new DataGridViewTextBoxColumn();
@@ -114,6 +107,32 @@
             Column11 = new DataGridViewTextBoxColumn();
             Column12 = new DataGridViewTextBoxColumn();
             Column13 = new DataGridViewTextBoxColumn();
+            dataGridView2 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            Column6 = new DataGridViewTextBoxColumn();
+            panel7 = new Panel();
+            panel8 = new Panel();
+            textBox8 = new TextBox();
+            label37 = new Label();
+            label38 = new Label();
+            label39 = new Label();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            tabPage2 = new TabPage();
+            tabPage3 = new TabPage();
+            button9 = new Button();
+            textBox6 = new TextBox();
+            label32 = new Label();
+            groupBox2 = new GroupBox();
+            label31 = new Label();
+            label30 = new Label();
+            label29 = new Label();
+            label28 = new Label();
+            groupBox1 = new GroupBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -138,6 +157,12 @@
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            panel7.SuspendLayout();
+            panel8.SuspendLayout();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox1
@@ -315,7 +340,6 @@
             // 
             // inventoryNav
             // 
-            inventoryNav.BackColor = Color.Transparent;
             inventoryNav.ForeColor = Color.White;
             inventoryNav.Location = new Point(0, 261);
             inventoryNav.Name = "inventoryNav";
@@ -358,7 +382,6 @@
             panel3HeaderTitle.Controls.Add(pictureBox12);
             panel3HeaderTitle.Controls.Add(label16);
             panel3HeaderTitle.Controls.Add(label17);
-            panel3HeaderTitle.Dock = DockStyle.Top;
             panel3HeaderTitle.Location = new Point(0, 0);
             panel3HeaderTitle.Name = "panel3HeaderTitle";
             panel3HeaderTitle.Size = new Size(1190, 125);
@@ -678,6 +701,7 @@
             // 
             // salesTransactionPanel
             // 
+            salesTransactionPanel.Controls.Add(panel7);
             salesTransactionPanel.Controls.Add(creditBtn);
             salesTransactionPanel.Controls.Add(payCashBtn);
             salesTransactionPanel.Controls.Add(textBox5);
@@ -958,6 +982,55 @@
             dataGridView3.Size = new Size(554, 247);
             dataGridView3.TabIndex = 1;
             // 
+            // Column7
+            // 
+            Column7.HeaderText = "Product Size";
+            Column7.MinimumWidth = 6;
+            Column7.Name = "Column7";
+            Column7.Width = 125;
+            // 
+            // Column8
+            // 
+            Column8.HeaderText = "Order By";
+            Column8.MinimumWidth = 6;
+            Column8.Name = "Column8";
+            Column8.Width = 125;
+            // 
+            // Column9
+            // 
+            Column9.HeaderText = "Product";
+            Column9.MinimumWidth = 6;
+            Column9.Name = "Column9";
+            Column9.Width = 125;
+            // 
+            // Column10
+            // 
+            Column10.HeaderText = "Total in Eggs";
+            Column10.MinimumWidth = 6;
+            Column10.Name = "Column10";
+            Column10.Width = 125;
+            // 
+            // Column11
+            // 
+            Column11.HeaderText = "Qty";
+            Column11.MinimumWidth = 6;
+            Column11.Name = "Column11";
+            Column11.Width = 125;
+            // 
+            // Column12
+            // 
+            Column12.HeaderText = "Amount";
+            Column12.MinimumWidth = 6;
+            Column12.Name = "Column12";
+            Column12.Width = 125;
+            // 
+            // Column13
+            // 
+            Column13.HeaderText = "Sold To";
+            Column13.MinimumWidth = 6;
+            Column13.Name = "Column13";
+            Column13.Width = 125;
+            // 
             // dataGridView2
             // 
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1010,54 +1083,202 @@
             Column6.Name = "Column6";
             Column6.Width = 125;
             // 
-            // Column7
+            // panel7
             // 
-            Column7.HeaderText = "Product Size";
-            Column7.MinimumWidth = 6;
-            Column7.Name = "Column7";
-            Column7.Width = 125;
+            panel7.Controls.Add(tabControl1);
+            panel7.Controls.Add(panel8);
+            panel7.Location = new Point(8, 0);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(1182, 623);
+            panel7.TabIndex = 31;
             // 
-            // Column8
+            // panel8
             // 
-            Column8.HeaderText = "Order By";
-            Column8.MinimumWidth = 6;
-            Column8.Name = "Column8";
-            Column8.Width = 125;
+            panel8.Controls.Add(textBox8);
+            panel8.Controls.Add(label37);
+            panel8.Controls.Add(label38);
+            panel8.Controls.Add(label39);
+            panel8.Dock = DockStyle.Bottom;
+            panel8.Location = new Point(0, 590);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(1182, 33);
+            panel8.TabIndex = 11;
             // 
-            // Column9
+            // textBox8
             // 
-            Column9.HeaderText = "Product";
-            Column9.MinimumWidth = 6;
-            Column9.Name = "Column9";
-            Column9.Width = 125;
+            textBox8.BorderStyle = BorderStyle.FixedSingle;
+            textBox8.Location = new Point(995, 3);
+            textBox8.Name = "textBox8";
+            textBox8.ReadOnly = true;
+            textBox8.Size = new Size(183, 27);
+            textBox8.TabIndex = 8;
             // 
-            // Column10
+            // label37
             // 
-            Column10.HeaderText = "Total in Eggs";
-            Column10.MinimumWidth = 6;
-            Column10.Name = "Column10";
-            Column10.Width = 125;
+            label37.AutoSize = true;
+            label37.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label37.Location = new Point(6, 5);
+            label37.Name = "label37";
+            label37.Size = new Size(132, 20);
+            label37.TabIndex = 5;
+            label37.Text = "Username: admin";
             // 
-            // Column11
+            // label38
             // 
-            Column11.HeaderText = "Qty";
-            Column11.MinimumWidth = 6;
-            Column11.Name = "Column11";
-            Column11.Width = 125;
+            label38.AutoSize = true;
+            label38.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label38.Location = new Point(307, 5);
+            label38.Name = "label38";
+            label38.Size = new Size(122, 20);
+            label38.TabIndex = 6;
+            label38.Text = "Account: Admin";
             // 
-            // Column12
+            // label39
             // 
-            Column12.HeaderText = "Amount";
-            Column12.MinimumWidth = 6;
-            Column12.Name = "Column12";
-            Column12.Width = 125;
+            label39.AutoSize = true;
+            label39.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label39.Location = new Point(903, 5);
+            label39.Name = "label39";
+            label39.Size = new Size(46, 20);
+            label39.TabIndex = 7;
+            label39.Text = "Date:";
             // 
-            // Column13
+            // tabControl1
             // 
-            Column13.HeaderText = "Sold To";
-            Column13.MinimumWidth = 6;
-            Column13.Name = "Column13";
-            Column13.Width = 125;
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabPage3);
+            tabControl1.Location = new Point(32, 22);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1129, 542);
+            tabControl1.TabIndex = 12;
+            // 
+            // tabPage1
+            // 
+            tabPage1.Controls.Add(groupBox2);
+            tabPage1.Controls.Add(groupBox1);
+            tabPage1.Location = new Point(4, 29);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(1121, 509);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Yearly Sales Report";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            tabPage2.Location = new Point(4, 29);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(716, 374);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Yearly Compare Sales Report";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            tabPage3.Location = new Point(4, 29);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(1121, 509);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "Yearly Sales Combination";
+            tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            button9.Location = new Point(150, 100);
+            button9.Name = "button9";
+            button9.Size = new Size(69, 29);
+            button9.TabIndex = 6;
+            button9.Text = "Load";
+            button9.UseVisualStyleBackColor = true;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(84, 60);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(135, 27);
+            textBox6.TabIndex = 5;
+            textBox6.Text = "2015";
+            // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label32.Location = new Point(28, 56);
+            label32.Name = "label32";
+            label32.Size = new Size(48, 25);
+            label32.TabIndex = 4;
+            label32.Text = "Year:";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(button9);
+            groupBox2.Controls.Add(textBox6);
+            groupBox2.Controls.Add(label32);
+            groupBox2.Location = new Point(252, 69);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(225, 146);
+            groupBox2.TabIndex = 6;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Current Sales";
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label31.ForeColor = Color.Red;
+            label31.Location = new Point(6, 159);
+            label31.Name = "label31";
+            label31.Size = new Size(59, 25);
+            label31.TabIndex = 3;
+            label31.Text = "₱0.00";
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label30.Location = new Point(6, 121);
+            label30.Name = "label30";
+            label30.Size = new Size(177, 25);
+            label30.TabIndex = 2;
+            label30.Text = "Current Month Sales:";
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label29.ForeColor = Color.Red;
+            label29.Location = new Point(6, 77);
+            label29.Name = "label29";
+            label29.Size = new Size(139, 25);
+            label29.TabIndex = 1;
+            label29.Text = "₱55,434,915.00";
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label28.Location = new Point(6, 39);
+            label28.Name = "label28";
+            label28.Size = new Size(93, 25);
+            label28.TabIndex = 0;
+            label28.Text = "Year Sales:";
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(label31);
+            groupBox1.Controls.Add(label30);
+            groupBox1.Controls.Add(label29);
+            groupBox1.Controls.Add(label28);
+            groupBox1.Location = new Point(29, 48);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(186, 195);
+            groupBox1.TabIndex = 5;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Current Sales";
             // 
             // Home
             // 
@@ -1103,6 +1324,15 @@
             panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            panel7.ResumeLayout(false);
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1194,5 +1424,24 @@
         private DataGridViewTextBoxColumn Column11;
         private DataGridViewTextBoxColumn Column12;
         private DataGridViewTextBoxColumn Column13;
+        private Panel panel7;
+        private Panel panel8;
+        private TextBox textBox8;
+        private Label label37;
+        private Label label38;
+        private Label label39;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
+        private TabPage tabPage3;
+        private GroupBox groupBox2;
+        private Button button9;
+        private TextBox textBox6;
+        private Label label32;
+        private GroupBox groupBox1;
+        private Label label31;
+        private Label label30;
+        private Label label29;
+        private Label label28;
     }
 }
