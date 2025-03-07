@@ -76,9 +76,10 @@
             label11 = new Label();
             label8 = new Label();
             salesTransactionPanel = new Panel();
-            panel7 = new Panel();
+            reportPanel = new Panel();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            pictureBox10 = new PictureBox();
             groupBox2 = new GroupBox();
             button9 = new Button();
             textBox6 = new TextBox();
@@ -134,7 +135,6 @@
             Column4 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewTextBoxColumn();
             Column6 = new DataGridViewTextBoxColumn();
-            pictureBox10 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -156,16 +156,16 @@
             homePanel.SuspendLayout();
             panel5.SuspendLayout();
             salesTransactionPanel.SuspendLayout();
-            panel7.SuspendLayout();
+            reportPanel.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
             panel8.SuspendLayout();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -704,7 +704,7 @@
             // 
             // salesTransactionPanel
             // 
-            salesTransactionPanel.Controls.Add(panel7);
+            salesTransactionPanel.Controls.Add(reportPanel);
             salesTransactionPanel.Controls.Add(creditBtn);
             salesTransactionPanel.Controls.Add(payCashBtn);
             salesTransactionPanel.Controls.Add(textBox5);
@@ -734,14 +734,15 @@
             salesTransactionPanel.TabIndex = 11;
             salesTransactionPanel.Paint += salesTransactionPanel_Paint;
             // 
-            // panel7
+            // reportPanel
             // 
-            panel7.Controls.Add(tabControl1);
-            panel7.Controls.Add(panel8);
-            panel7.Location = new Point(8, 0);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(1182, 623);
-            panel7.TabIndex = 31;
+            reportPanel.Controls.Add(tabControl1);
+            reportPanel.Controls.Add(panel8);
+            reportPanel.Location = new Point(8, 0);
+            reportPanel.Name = "reportPanel";
+            reportPanel.Size = new Size(1182, 623);
+            reportPanel.TabIndex = 31;
+            reportPanel.Visible = false;
             // 
             // tabControl1
             // 
@@ -766,6 +767,15 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Yearly Sales Report";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
+            pictureBox10.Location = new Point(0, 265);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(1125, 241);
+            pictureBox10.TabIndex = 7;
+            pictureBox10.TabStop = false;
             // 
             // groupBox2
             // 
@@ -1284,15 +1294,6 @@
             Column6.Name = "Column6";
             Column6.Width = 125;
             // 
-            // pictureBox10
-            // 
-            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(0, 265);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(1125, 241);
-            pictureBox10.TabIndex = 7;
-            pictureBox10.TabStop = false;
-            // 
             // Home
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1333,9 +1334,10 @@
             panel5.PerformLayout();
             salesTransactionPanel.ResumeLayout(false);
             salesTransactionPanel.PerformLayout();
-            panel7.ResumeLayout(false);
+            reportPanel.ResumeLayout(false);
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             groupBox1.ResumeLayout(false);
@@ -1346,7 +1348,6 @@
             panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ResumeLayout(false);
         }
 
@@ -1438,7 +1439,7 @@
         private DataGridViewTextBoxColumn Column11;
         private DataGridViewTextBoxColumn Column12;
         private DataGridViewTextBoxColumn Column13;
-        private Panel panel7;
+        private Panel reportPanel;
         private Panel panel8;
         private TextBox textBox8;
         private Label label37;
