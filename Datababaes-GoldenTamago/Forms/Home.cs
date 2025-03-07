@@ -13,6 +13,7 @@ namespace Datababaes_GoldenTamago.Forms
     public partial class Home : Form
     {
         private Label activeLabel;
+        private string userRole;
         public Home()
         {
             InitializeComponent();
@@ -110,12 +111,35 @@ namespace Datababaes_GoldenTamago.Forms
             textBox1.Text = DateTime.Now.ToString("MM/dd/yyyy  hh:mm:ss tt");
             textBox2.Text = DateTime.Now.ToString("MM/dd/yyyy  hh:mm:ss tt");
             textBox3.Text = DateTime.Now.ToString("MM/dd/yyyy  hh:mm:ss tt");
-
+            textBox9.Text = DateTime.Now.ToString("MM/dd/yyyy  hh:mm:ss tt");
             // Sales Transaction Buttons 
             payCashBtn.Enabled = false;
             creditBtn.Enabled = false;
 
+            // Add values on admin panel datagridview
+            dataGridView4.Rows.Add("5", "Bryan", "admin", "admin", "admin", "admin", "admin");
+            dataGridView4.Rows.Add("6", "jerel", "beltran", "jerel", "123", "0923531245", "personnel");
 
+            // Add values on inveotry panel and added some styles
+            dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;     
+
+           dataGridView1.Rows.Add("1", "Coke", "1540", "50");
+            dataGridView1.Rows.Add("2", "Max", "99989", "50");
+            dataGridView1.Rows.Add("3", "C2", "48", "50");
+            dataGridView1.Rows.Add("4", "Voice", "18", "50");
+            dataGridView1.Rows.Add("5", "Sky Flakes", "25245", "50");
+            dataGridView1.Rows.Add("6", "Corteno", "48016", "50");
+            dataGridView1.Rows.Add("7", "Pencil", "35767", "50");
+            dataGridView1.Rows.Add("8", "Ballpen", "13423", "50");
+            dataGridView1.Rows.Add("9", "Folder", "36163", "100");
+            dataGridView1.Rows.Add("10", "Pen", "98628", "100000");
+
+            // Set row indexes (0-based index)
+            dataGridView1.Rows[2].DefaultCellStyle.ForeColor = System.Drawing.Color.Red; // Row 1
+            dataGridView1.Rows[3].DefaultCellStyle.ForeColor = System.Drawing.Color.Red; // Row 2
+            dataGridView1.Rows[9].DefaultCellStyle.ForeColor = System.Drawing.Color.Red; // Row 10  
+            dataGridView1.Rows[3].DefaultCellStyle.ForeColor = System.Drawing.Color.Red; // Row 2
+            dataGridView1.Rows[9].DefaultCellStyle.ForeColor = System.Drawing.Color.Red; // Row 10
 
         }
         // When mouse enters (hover), change background to red
@@ -165,12 +189,14 @@ namespace Datababaes_GoldenTamago.Forms
             homePanel.Visible = false;
             salesTransactionPanel.Visible = false;
             GraphSaleReportPanel.Visible = false;
-
+            panel1.Visible = false;
 
             // The titles of each label when switched
             panel3HeaderTitle.Visible = false;
             salesTransactionHeaderTitle.Visible = false;
             graphHeader.Visible = false;
+            adminPanelHeader.Visible = false;
+            headerPanel.Visible = false;
 
 
             // this part will show the panel that is clicked
@@ -188,6 +214,14 @@ namespace Datababaes_GoldenTamago.Forms
         private void Home_Load(object sender, EventArgs e)
         {
             PopulateDataGridView2();
+            if (!"Admin".Equals(userRole)) {
+           report.Visible = false;
+                salesForecast.Visible = false;
+                adminPanel.Visible = false;
+                pictureBox6.Visible = false;
+                pictureBox7.Visible = false;
+                pictureBox8.Visible = false;
+            }
 
         }
 
@@ -236,7 +270,7 @@ namespace Datababaes_GoldenTamago.Forms
 
         private void label5_Click(object sender, EventArgs e)
         {
-
+            ShowPanel(panel1, adminPanelHeader);
         }
 
         private void salesForecast_Click(object sender, EventArgs e)
@@ -475,6 +509,41 @@ namespace Datababaes_GoldenTamago.Forms
         {
             ShowPanel(GraphSaleReportPanel, graphHeader);
             GraphSaleReportPanel.BringToFront();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logOut_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+        }
+        public void checkUserRole(string roleOfUser) {
+            userRole = roleOfUser;
         }
     }
 }

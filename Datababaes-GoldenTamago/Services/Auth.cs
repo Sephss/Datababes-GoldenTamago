@@ -9,8 +9,10 @@ namespace Datababaes_GoldenTamago.Services
     internal class Auth
     {
         public bool logInUser(string username, string password) {
-            if (username.Equals("Test") && password.Equals("Test123"))
+            if (username.Equals("Admin") && password.Equals("Admin123"))
             {
+                return true;
+            } else if (username.Equals("Client") && password.Equals("Client123")) {
                 return true;
             }
             else {

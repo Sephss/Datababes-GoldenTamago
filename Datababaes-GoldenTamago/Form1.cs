@@ -39,6 +39,7 @@ namespace Datababaes_GoldenTamago
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Home home = new Home();
             string username = textBox1.Text;
             string password = textBox2.Text;
 
@@ -47,7 +48,7 @@ namespace Datababaes_GoldenTamago
 
             if (isUserCredentialCorrect)
             {
-                Home home = new Home();
+                home.checkUserRole(username);
                 MessageBox.Show("Login Successful");
                 home.Show();
                 this.Hide();
