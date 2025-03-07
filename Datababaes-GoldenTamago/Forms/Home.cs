@@ -52,6 +52,7 @@ namespace Datababaes_GoldenTamago.Forms
             logOut.MouseLeave += lbl_MouseLeave;
             logOut.Click += lblNav_Click;
 
+            // By Default naka show yung Home
             ShowPanel(homePanel, panel2);
 
             // Custom style for datetime in inventory
@@ -108,7 +109,7 @@ namespace Datababaes_GoldenTamago.Forms
 
         private void ShowPanel(Panel panel, Panel headerTitle)
         {
-            // By Default all panels are visible
+            // By Default all panels are inviisible except HOME
             panel3.Visible = false;
             homePanel.Visible = false;
             salesTransactionPanel.Visible = false;
