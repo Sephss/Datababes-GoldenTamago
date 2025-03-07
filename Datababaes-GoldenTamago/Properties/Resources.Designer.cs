@@ -123,6 +123,16 @@ namespace Datababaes_GoldenTamago.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_Chart_Graph_Ascending_72921___Copy {
+            get {
+                object obj = ResourceManager.GetObject("if_Chart_Graph_Ascending_72921 - Copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_Close_132419 {
             get {
                 object obj = ResourceManager.GetObject("if_Close_132419", resourceCulture);
@@ -166,6 +176,16 @@ namespace Datababaes_GoldenTamago.Properties {
         internal static System.Drawing.Bitmap maintainance3 {
             get {
                 object obj = ResourceManager.GetObject("maintainance3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap report2___Copy {
+            get {
+                object obj = ResourceManager.GetObject("report2 - Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

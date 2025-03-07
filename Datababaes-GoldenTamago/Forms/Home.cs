@@ -92,7 +92,19 @@ namespace Datababaes_GoldenTamago.Forms
             logOut.MouseLeave += lbl_MouseLeave;
             logOut.Click += lblNav_Click;
 
-            ShowPanel(homePanel, panel2);
+            subSideBarHome.MouseEnter += lbl_MouseEnter;
+            subSideBarHome.MouseLeave += lbl_MouseLeave;
+
+            subSideBarGraph.MouseEnter += lbl_MouseEnter;
+            subSideBarGraph.MouseLeave += lbl_MouseLeave;
+
+            subSideBarTables.MouseEnter += lbl_MouseEnter;
+            subSideBarTables.MouseLeave += lbl_MouseLeave;
+
+            subSideBarLogout.MouseEnter += lbl_MouseEnter;
+            subSideBarLogout.MouseLeave += lbl_MouseLeave;
+
+            ShowPanel(homePanel, headerPanel);
 
             // Custom style for datetime in inventory
             textBox1.Text = DateTime.Now.ToString("MM/dd/yyyy  hh:mm:ss tt");
@@ -152,10 +164,13 @@ namespace Datababaes_GoldenTamago.Forms
             panel3.Visible = false;
             homePanel.Visible = false;
             salesTransactionPanel.Visible = false;
+            GraphSaleReportPanel.Visible = false;
+
 
             // The titles of each label when switched
             panel3HeaderTitle.Visible = false;
             salesTransactionHeaderTitle.Visible = false;
+            graphHeader.Visible = false;
 
 
             // this part will show the panel that is clicked
@@ -167,7 +182,7 @@ namespace Datababaes_GoldenTamago.Forms
 
         private void label1_Click(object sender, EventArgs e)
         {
-            ShowPanel(homePanel, panel2);
+            ShowPanel(homePanel, headerPanel);
         }
 
         private void Home_Load(object sender, EventArgs e)
@@ -208,6 +223,14 @@ namespace Datababaes_GoldenTamago.Forms
 
         private void report_Click(object sender, EventArgs e)
         {
+
+
+
+
+            mainSidebar.SendToBack();
+            ShowPanel(homePanel, headerPanel);
+
+
 
         }
 
@@ -425,6 +448,33 @@ namespace Datababaes_GoldenTamago.Forms
         private void label30_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label33_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void subSideBarHome_Click(object sender, EventArgs e)
+        {
+            ShowPanel(homePanel, headerPanel);
+            subSidebar.SendToBack();
+        }
+
+        private void subSideBarGraph_Click(object sender, EventArgs e)
+        {
+            ShowPanel(GraphSaleReportPanel, graphHeader);
+            GraphSaleReportPanel.BringToFront();
         }
     }
 }
