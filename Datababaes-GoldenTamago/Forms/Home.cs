@@ -209,9 +209,7 @@ namespace Datababaes_GoldenTamago.Forms
 
         private void report_Click(object sender, EventArgs e)
         {
-            Report report = new Report();
-            report.Show();
-            this.Hide();
+          
         }
 
         private void label5_Click(object sender, EventArgs e)

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
             pictureBox3 = new PictureBox();
@@ -76,26 +75,6 @@
             label11 = new Label();
             label8 = new Label();
             salesTransactionPanel = new Panel();
-            reportPanel = new Panel();
-            tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
-            pictureBox10 = new PictureBox();
-            groupBox2 = new GroupBox();
-            button9 = new Button();
-            textBox6 = new TextBox();
-            label32 = new Label();
-            groupBox1 = new GroupBox();
-            label31 = new Label();
-            label30 = new Label();
-            label29 = new Label();
-            label28 = new Label();
-            tabPage2 = new TabPage();
-            tabPage3 = new TabPage();
-            panel8 = new Panel();
-            textBox8 = new TextBox();
-            label37 = new Label();
-            label38 = new Label();
-            label39 = new Label();
             creditBtn = new Button();
             payCashBtn = new Button();
             textBox5 = new TextBox();
@@ -156,13 +135,6 @@
             homePanel.SuspendLayout();
             panel5.SuspendLayout();
             salesTransactionPanel.SuspendLayout();
-            reportPanel.SuspendLayout();
-            tabControl1.SuspendLayout();
-            tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            groupBox2.SuspendLayout();
-            groupBox1.SuspendLayout();
-            panel8.SuspendLayout();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
@@ -704,7 +676,6 @@
             // 
             // salesTransactionPanel
             // 
-            salesTransactionPanel.Controls.Add(reportPanel);
             salesTransactionPanel.Controls.Add(creditBtn);
             salesTransactionPanel.Controls.Add(payCashBtn);
             salesTransactionPanel.Controls.Add(textBox5);
@@ -733,214 +704,6 @@
             salesTransactionPanel.Size = new Size(1190, 623);
             salesTransactionPanel.TabIndex = 11;
             salesTransactionPanel.Paint += salesTransactionPanel_Paint;
-            // 
-            // reportPanel
-            // 
-            reportPanel.Controls.Add(tabControl1);
-            reportPanel.Controls.Add(panel8);
-            reportPanel.Location = new Point(8, 0);
-            reportPanel.Name = "reportPanel";
-            reportPanel.Size = new Size(1182, 623);
-            reportPanel.TabIndex = 31;
-            reportPanel.Visible = false;
-            // 
-            // tabControl1
-            // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Controls.Add(tabPage3);
-            tabControl1.Location = new Point(32, 22);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1129, 542);
-            tabControl1.TabIndex = 12;
-            // 
-            // tabPage1
-            // 
-            tabPage1.Controls.Add(pictureBox10);
-            tabPage1.Controls.Add(groupBox2);
-            tabPage1.Controls.Add(groupBox1);
-            tabPage1.Location = new Point(4, 29);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1121, 509);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Yearly Sales Report";
-            tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox10
-            // 
-            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(0, 265);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(1125, 241);
-            pictureBox10.TabIndex = 7;
-            pictureBox10.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            groupBox2.Controls.Add(button9);
-            groupBox2.Controls.Add(textBox6);
-            groupBox2.Controls.Add(label32);
-            groupBox2.Location = new Point(252, 69);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(225, 146);
-            groupBox2.TabIndex = 6;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Current Sales";
-            // 
-            // button9
-            // 
-            button9.Location = new Point(150, 100);
-            button9.Name = "button9";
-            button9.Size = new Size(69, 29);
-            button9.TabIndex = 6;
-            button9.Text = "Load";
-            button9.UseVisualStyleBackColor = true;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(84, 60);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(135, 27);
-            textBox6.TabIndex = 5;
-            textBox6.Text = "2015";
-            // 
-            // label32
-            // 
-            label32.AutoSize = true;
-            label32.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label32.Location = new Point(28, 56);
-            label32.Name = "label32";
-            label32.Size = new Size(48, 25);
-            label32.TabIndex = 4;
-            label32.Text = "Year:";
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(label31);
-            groupBox1.Controls.Add(label30);
-            groupBox1.Controls.Add(label29);
-            groupBox1.Controls.Add(label28);
-            groupBox1.Location = new Point(29, 48);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(186, 195);
-            groupBox1.TabIndex = 5;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Current Sales";
-            // 
-            // label31
-            // 
-            label31.AutoSize = true;
-            label31.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label31.ForeColor = Color.Red;
-            label31.Location = new Point(6, 159);
-            label31.Name = "label31";
-            label31.Size = new Size(59, 25);
-            label31.TabIndex = 3;
-            label31.Text = "₱0.00";
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label30.Location = new Point(6, 121);
-            label30.Name = "label30";
-            label30.Size = new Size(177, 25);
-            label30.TabIndex = 2;
-            label30.Text = "Current Month Sales:";
-            // 
-            // label29
-            // 
-            label29.AutoSize = true;
-            label29.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label29.ForeColor = Color.Red;
-            label29.Location = new Point(6, 77);
-            label29.Name = "label29";
-            label29.Size = new Size(139, 25);
-            label29.TabIndex = 1;
-            label29.Text = "₱55,434,915.00";
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label28.Location = new Point(6, 39);
-            label28.Name = "label28";
-            label28.Size = new Size(93, 25);
-            label28.TabIndex = 0;
-            label28.Text = "Year Sales:";
-            // 
-            // tabPage2
-            // 
-            tabPage2.Location = new Point(4, 29);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1121, 509);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Yearly Compare Sales Report";
-            tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            tabPage3.Location = new Point(4, 29);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(1121, 509);
-            tabPage3.TabIndex = 2;
-            tabPage3.Text = "Yearly Sales Combination";
-            tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // panel8
-            // 
-            panel8.Controls.Add(textBox8);
-            panel8.Controls.Add(label37);
-            panel8.Controls.Add(label38);
-            panel8.Controls.Add(label39);
-            panel8.Dock = DockStyle.Bottom;
-            panel8.Location = new Point(0, 590);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(1182, 33);
-            panel8.TabIndex = 11;
-            // 
-            // textBox8
-            // 
-            textBox8.BorderStyle = BorderStyle.FixedSingle;
-            textBox8.Location = new Point(995, 3);
-            textBox8.Name = "textBox8";
-            textBox8.ReadOnly = true;
-            textBox8.Size = new Size(183, 27);
-            textBox8.TabIndex = 8;
-            // 
-            // label37
-            // 
-            label37.AutoSize = true;
-            label37.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label37.Location = new Point(6, 5);
-            label37.Name = "label37";
-            label37.Size = new Size(132, 20);
-            label37.TabIndex = 5;
-            label37.Text = "Username: admin";
-            // 
-            // label38
-            // 
-            label38.AutoSize = true;
-            label38.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label38.Location = new Point(307, 5);
-            label38.Name = "label38";
-            label38.Size = new Size(122, 20);
-            label38.TabIndex = 6;
-            label38.Text = "Account: Admin";
-            // 
-            // label39
-            // 
-            label39.AutoSize = true;
-            label39.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label39.Location = new Point(903, 5);
-            label39.Name = "label39";
-            label39.Size = new Size(46, 20);
-            label39.TabIndex = 7;
-            label39.Text = "Date:";
             // 
             // creditBtn
             // 
@@ -1334,16 +1097,6 @@
             panel5.PerformLayout();
             salesTransactionPanel.ResumeLayout(false);
             salesTransactionPanel.PerformLayout();
-            reportPanel.ResumeLayout(false);
-            tabControl1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            panel8.ResumeLayout(false);
-            panel8.PerformLayout();
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
@@ -1439,25 +1192,5 @@
         private DataGridViewTextBoxColumn Column11;
         private DataGridViewTextBoxColumn Column12;
         private DataGridViewTextBoxColumn Column13;
-        private Panel reportPanel;
-        private Panel panel8;
-        private TextBox textBox8;
-        private Label label37;
-        private Label label38;
-        private Label label39;
-        private TabControl tabControl1;
-        private TabPage tabPage1;
-        private TabPage tabPage2;
-        private TabPage tabPage3;
-        private GroupBox groupBox2;
-        private Button button9;
-        private TextBox textBox6;
-        private Label label32;
-        private GroupBox groupBox1;
-        private Label label31;
-        private Label label30;
-        private Label label29;
-        private Label label28;
-        private PictureBox pictureBox10;
     }
 }
